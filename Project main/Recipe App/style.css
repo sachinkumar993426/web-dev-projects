@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400;1,500;1,600&family=PT+Serif:ital,wght@1,700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #ebdcdb;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8f3333, #f1eded);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f3efef, #f1ebea); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'PT Serif', serif; 
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}    
+
+.mobile-container{
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px rgb(103, 109, 95);
+    overflow: hidden;
+    border-radius: 3px;
+
+}
+
+
+img{
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    padding: 1rem;
+}
+
+header input{
+    padding: 0.4rem 1rem;
+    border:none;
+    background-color: rgb(241, 236, 236);
+    border-radius: 5px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-left:70px;;
+
+}
+
+header button{
+    /* padding: 0.5px 1px; */
+    background-color: transparent;
+    /* border: none; */
+    font-size: 1.5rem;
+    color: violet;
+    /* margin:auto; */
+
+
+}
+
+.fav-container{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    background-color: rgb(245, 218, 227);
+    padding: 5px 0;
+}
+
+.fav-meals{
+    display: flex;
+    /* flex-direction: row; */
+    /* text-align: center; */
+    list-style-type: none;
+    /* justify-content: center; */
+    /* padding:0 10px; */
+    /* margin: 0 0px; */
+    /* margin-right: 30px; */
+    padding: 0;
+    /* margin: 0 0px; */
+    /* overflow: hidden; */
+    /* overflow-x: hidden; */
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    align-items: center;
+
+
+    
+}
+.fav-meals li{
+    /* width: 100px; */
+    margin: 0 7px;
+    /* display:block; */
+}
+
+.fav-meals li img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: rgb(239, 243, 243);
+    margin-right: 55px;
+    /* margin: 0 0px; */
+    /* overflow: hidden; */
+    /* justify-content: space-around; */
+    display:block;
+    margin: 8px 2px
+    
+
+}
+
+.fav-meals li span{
+    /* text-align: center; */
+    font-size: 0.8rem;
+    /* display: none; */
+    /* display:block; */
+}
+
+.meal{
+
+    box-shadow: 0px 0px 5px 0px rgb(103, 109, 95);
+    margin: 1rem;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+     
+}
+
+.meal-header{
+    /* position:relative; */
+
+}
+.meal-header img{
+          height: 250px;
+          width: 100%;
+          
+    /* background-image: url(./p/brooke-lark-nLBcOY8t9tc-unsplash.jpg); */
+}
+
+ .random {
+    position: absolute;
+    background-color: white;
+    top: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 3px;
+    padding: 0.25rem 0.5rem;
+}
+
+
+
+
+.meal-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+.meal-body h4{
+    margin: 0%;
+}
+
+.meal-body .fav-btn{
+    border: none;
+    background-color:transparent;
+    font-size: 1.2rem;
+    color: gray;
+    cursor: pointer;
+    
+}
+
+.meal-body .fav-btn:active{
+    color: rgb(233, 14, 14);
+}
